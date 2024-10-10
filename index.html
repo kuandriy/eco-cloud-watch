@@ -1,82 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Eco Cloudwatch - Environmental Impact of Your Cloud</title>
+    <title>Eco Cloudwatch - Saving Costs, Saving the Planet</title>
+    <link rel="icon" href="favicon.webp" type="image/x-icon">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        /* General Settings */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            background-color: #ffffff;
+            color: #333;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        .content {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #333;
-        }
-        p {
             line-height: 1.6;
         }
-        ul {
-            margin-left: 20px;
+        h1, h2, h3 {
+            font-family: 'Arial', sans-serif;
+            color: #222;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 50px 0;
+            text-align: left;
+        }
+        .hero-content {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 40px 0;
+            text-align: center;
+            background-color: #ffffff;
+        }
+        .section.bg-light {
+            background-color: #f9f9f9;
+        }
+        .icon-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 40px;
+        }
+        .icon-box i {
+            font-size: 3.5rem; /* Icons size increased */
+            color: #28a745;
+            margin-bottom: 12px;
+        }
+        .icon-box h3 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        .icon-box p {
+            font-size: 1rem;
+            color: #666;
+            max-width: 300px;
+        }
+
+        /* Line Connector */
+        .line-connector {
+            width: 2px;
+            height: 80px;
+            background-color: #28a745;
+            margin: 0 auto;
+            position: relative;
+        }
+        .line-connector:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            height: 18px;
+            width: 18px;
+            background-color: white;
+            border: 2px solid #28a745;
+            border-radius: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Button */
+        .feedback {
+            display: inline-block;
+            margin-top: 15px;
+            font-size: 1rem;
+            background-color: #28a745;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .feedback:hover {
+            background-color: #218838;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer a {
+            color: #28a745;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #218838;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Welcome to Eco Cloudwatch</h1>
-    <p>Understand the Environmental Impact of Your Cloud Environment</p>
+<!-- HERO SECTION -->
+<header class="hero">
+    <div class="hero-content">
+        <h1>Eco Cloudwatch: Saving Costs, Saving the Planet</h1>
+        <p>Cloud infrastructure costs are rising, and the environmental impact is growing. Eco Cloudwatch explores ways to optimize cloud usage, reduce expenses, and make a positive environmental impact.</p>
+    </div>
 </header>
 
-<div class="content">
-    <h2>Problem Identification</h2>
-    <p>Cloud infrastructure is growing rapidly, but many users are unaware of how their usage translates into energy consumption and carbon emissions. Data centers consume significant energy, and over-provisioning resources lead to wasted energy and increased costs.</p>
-    
-    <h2>Value Proposition</h2>
-    <p>Eco Cloudwatch offers a simplified, actionable view of your cloud environment's carbon emissions. Our platform helps you optimize your cloud setup, reduce costs, and contribute to a sustainable future.</p>
+<!-- PROBLEM SECTION -->
+<div class="container section" id="problem">
+    <div class="icon-box">
+        <i class="fas fa-dollar-sign"></i>
+        <h3>Cloud Costs Are Growing</h3>
+        <p>Over-provisioned resources and unused services are leading to higher expenses without delivering value.</p>
+    </div>
+    <div class="line-connector"></div>
 
-    <h2>Key Features</h2>
-    <ul>
-        <li><strong>Carbon Footprint Dashboard:</strong> A clear overview of your cloud infrastructure's emissions, broken down by service.</li>
-        <li><strong>Sustainability Score:</strong> Get a score based on the efficiency of your cloud usage.</li>
-        <li><strong>Cost and Impact Comparison:</strong> See how reducing cloud resources saves both money and emissions.</li>
-        <li><strong>Recommendations Engine:</strong> Personalized recommendations to optimize your cloud setup for sustainability.</li>
-        <li><strong>Real-Time Monitoring:</strong> Track your cloud’s environmental impact in real time.</li>
-    </ul>
+    <div class="icon-box">
+        <i class="fas fa-cloud"></i>
+        <h3>Wasted Cloud Resources</h3>
+        <p>Many cloud services sit idle, consuming energy and contributing to inefficiency.</p>
+    </div>
+    <div class="line-connector"></div>
 
-    <h2>Client Segments</h2>
-    <ul>
-        <li><strong>Small and Medium-Sized Businesses (SMBs):</strong> Optimize cloud usage while reducing their carbon footprint.</li>
-        <li><strong>Enterprises:</strong> Track cloud sustainability for regulatory compliance and corporate responsibility.</li>
-        <li><strong>SaaS Providers:</strong> Gain a competitive edge by offering sustainable cloud operations.</li>
-        <li><strong>Developers:</strong> Integrate sustainable practices into DevOps and cloud development workflows.</li>
-    </ul>
-
-    <h2>Current Trends</h2>
-    <ul>
-        <li><strong>Sustainability Goals:</strong> Companies are committing to net-zero emissions, making tools that help them achieve this highly valuable.</li>
-        <li><strong>Green IT Movement:</strong> Organizations are increasingly aware of the environmental impact of their IT infrastructure.</li>
-        <li><strong>Cloud Providers and Renewable Energy:</strong> Major providers are moving towards using renewable energy, and Eco Cloudwatch can help users track this.</li>
-    </ul>
-
-    <h2>Why Eco Cloudwatch?</h2>
-    <p>We make cloud sustainability simple, actionable, and accessible for all. Whether you're a small business or a large enterprise, Eco Cloudwatch provides the insights and recommendations you need to reduce costs and minimize your environmental impact.</p>
+    <div class="icon-box">
+        <i class="fas fa-leaf"></i>
+        <h3>Environmental Impact</h3>
+        <p>Wasted cloud resources contribute to a growing carbon footprint, affecting sustainability goals.</p>
+    </div>
 </div>
+
+<!-- DISCUSSING SOLUTIONS SECTION -->
+<div class="container section bg-light" id="vision">
+    <div class="icon-box">
+        <i class="fas fa-coins"></i>
+        <h3>Reducing Cloud Costs</h3>
+        <p>Eco Cloudwatch identifies inefficiencies and offers ways to optimize resource use.</p>
+    </div>
+    <div class="line-connector"></div>
+
+    <div class="icon-box">
+        <i class="fas fa-chart-line"></i>
+        <h3>Enhancing Efficiency</h3>
+        <p>With better insights and cloud management, costs and environmental impact can be reduced.</p>
+    </div>
+    <div class="line-connector"></div>
+
+    <div class="icon-box">
+        <i class="fas fa-seedling"></i>
+        <h3>Supporting Sustainability</h3>
+        <p>Optimizing cloud resources supports businesses in reaching their sustainability targets.</p>
+    </div>
+</div>
+
+<!-- INVITE FEEDBACK SECTION -->
+<div class="container section">
+    <div class="text-center">
+        <h2>Help Us Build a Greener, More Efficient Cloud</h2>
+        <p>Your feedback helps us improve Eco Cloudwatch. Share your thoughts!</p>
+        <form action="https://formspree.io/f/xgvewgza" method="POST" class="form-group mx-auto" style="max-width: 600px;">
+            <div class="mb-3">
+                <label for="email" class="form-label">Your email:</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Your message:</label>
+                <textarea class="form-control" name="message" id="message" rows="5" placeholder="Share your thoughts" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Send Feedback</button>
+        </form>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2024 Eco Cloudwatch. All Rights Reserved.</p>
+    <p>Connect with me on <a href="https://www.linkedin.com/in/andriykudelya" target="_blank">LinkedIn</a></p>
+</footer>
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Font Awesome JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
 
 </body>
 </html>
