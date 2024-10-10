@@ -28,7 +28,7 @@
         .hero {
             background-color: #f4f4f4;
             color: #333;
-            padding: 50px 0;
+            padding: 40px 0;
             text-align: left;
         }
         .hero-content {
@@ -37,21 +37,20 @@
             padding: 20px;
         }
         .hero h1 {
-            font-size: 2.2rem;
+            font-size: 2rem;
             font-weight: 600;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             line-height: 1.4;
         }
         .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 15px;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
         }
 
         /* Section Styling */
         .section {
-            padding: 40px 0;
+            padding: 30px 0;
             text-align: center;
-            background-color: #ffffff;
         }
         .section.bg-light {
             background-color: #f9f9f9;
@@ -61,28 +60,28 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
         .icon-box i {
-            font-size: 3.5rem; /* Icons size increased */
+            font-size: 3rem; /* Icons size adjusted for mobile */
             color: #28a745;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
         .icon-box h3 {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 500;
             margin-bottom: 8px;
         }
         .icon-box p {
-            font-size: 1rem;
+            font-size: 0.95rem;
             color: #666;
-            max-width: 300px;
+            max-width: 280px;
         }
 
         /* Line Connector */
         .line-connector {
             width: 2px;
-            height: 80px;
+            height: 60px;
             background-color: #28a745;
             margin: 0 auto;
             position: relative;
@@ -92,8 +91,8 @@
             position: absolute;
             top: 0;
             left: 50%;
-            height: 18px;
-            width: 18px;
+            height: 16px;
+            width: 16px;
             background-color: white;
             border: 2px solid #28a745;
             border-radius: 50%;
@@ -120,7 +119,7 @@
         footer {
             background-color: #333;
             color: white;
-            padding: 20px;
+            padding: 15px;
             text-align: center;
         }
         footer a {
@@ -129,6 +128,25 @@
         }
         footer a:hover {
             color: #218838;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .icon-box i {
+                font-size: 2.5rem;
+            }
+            .icon-box p {
+                font-size: 0.9rem;
+            }
+            .section {
+                padding: 20px 0;
+            }
         }
     </style>
 </head>
